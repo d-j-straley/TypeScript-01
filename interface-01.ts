@@ -1,13 +1,12 @@
 // Try creating a new interface and extending it like below
-// something wrong here
+// what is the difference between this and class inheritance?
 
-
-interface Rectangle4 {
+interface Rectangle5 {
   height4: number,
   width4: number
 }
 
-interface ColoredRectangle4 extends Rectangle4 {
+interface ColoredRectangle4 extends Rectangle5 {
   color4: string
 }
 
