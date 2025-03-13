@@ -6,14 +6,17 @@ interface Rectangle5 {
   width4: number
 }
 
-interface ColoredRectangle4 extends Rectangle5 {
+interface ColoredRectangle5 extends Rectangle5 {
   color4: string
 }
 
-const coloredRectangle4: ColoredRectangle4 = {
+// How is the following possible without an "implements" keyword?
+// The interface is not a class, so it does not have to be implemented
+// The interface is a contract that the object must follow
+const coloredRectangle5: ColoredRectangle5 = {
   height4: 20,
   width4: 10,
   color4: "red"
 };
 
-console.log(coloredRectangle4);
+console.log(coloredRectangle5);
